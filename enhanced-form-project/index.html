@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Example HTML5 page showcasing lists, tables, media, and a complete form with HTML5 validation.">
+    <meta name="author" content="Your Name">
+    <title>Enhanced HTML5 Content & Form</title>
+</head>
+<body>
+    <header>
+        <h1>HTML5 Enhanced Content & Form Example</h1>
+    </header>
+
+    <main>
+        <!-- Lists Section -->
+        <section>
+            <h2>Popular Web Development Skills</h2>
+            <ul>
+                <li>HTML5 & Semantic Structure</li>
+                <li>CSS3 & Responsive Design</li>
+                <li>JavaScript & DOM Manipulation</li>
+                <li>Accessibility (WCAG)</li>
+                <li>Search Engine Optimization (SEO)</li>
+            </ul>
+        </section>
+
+        <!-- Table Section -->
+        <section>
+            <h2>Course Schedule</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Duration (hrs)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML5 Basics</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>CSS Fundamentals</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>JavaScript Essentials</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Media Section -->
+        <section>
+            <h2>Learn HTML5 in Action</h2>
+            <figure>
+                <img src="images/html5-logo.png" alt="HTML5 Logo" width="150">
+                <figcaption>The HTML5 logo represents the modern web.</figcaption>
+            </figure>
+            <audio controls>
+                <source src="media/html5-audio-sample.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <video controls width="320">
+                <source src="media/html5-video-sample.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+
+        <!-- Form Section -->
+        <section>
+            <h2>Course Registration Form</h2>
+            <form action="submit.php" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3"><br><br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required><br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="At least 6 characters" required minlength="6"><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Course Preferences</legend>
+
+                    <label for="course">Select Course:</label>
+                    <select id="course" name="course" required>
+                        <option value="">-- Choose a Course --</option>
+                        <option value="html5">HTML5 Fundamentals</option>
+                        <option value="css3">CSS3 Styling</option>
+                        <option value="javascript">JavaScript Basics</option>
+                    </select><br><br>
+
+                    <p>Preferred Contact Method:</p>
+                    <label><input type="radio" name="contact_method" value="email" required> Email</label>
+                    <label><input type="radio" name="contact_method" value="phone"> Phone</label><br><br>
+
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes"> Subscribe to newsletter
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Comments</legend>
+                    <textarea id="comments" name="comments" placeholder="Write your message here..." rows="4" cols="40"></textarea>
+                </fieldset>
+
+                <br>
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear Form">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
